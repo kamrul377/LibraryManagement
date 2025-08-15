@@ -3,6 +3,7 @@ package com.mycompany.library;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Scanner;
 
 
@@ -48,7 +49,7 @@ public class Book {
     }
 
     public void displayInfo() {
-        System.out.printf("%d - %s by %s [%s] - %s\n",
+        System.out.printf("# %d | Name:%s  Author:%s  Category:[%s]  Status:%s\n",
                 bookId, title, author, category, isAvailable ? "Available" : "Borrowed");
     }    
 }

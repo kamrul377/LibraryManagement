@@ -46,7 +46,7 @@ public class LibrarySystem {
 
     public Member getMemberById(int memberId) {
         for (Member m : members) {
-            if (m.memberId == memberId) { // memberId is private, so needs getter if strict
+            if (m.memberId == memberId) { 
                 return m;
             }
         }

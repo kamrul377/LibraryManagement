@@ -11,11 +11,13 @@ public class Library {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        Librarian librarian = new Librarian(1, "Admin", "0123456789");
+        Librarian librarian = new Librarian(1, "Admin", "01970052671");
         LibrarySystem library = new LibrarySystem(librarian);
 
         while (true) {
-            System.out.println("\n--- Library Management System ---");
+            System.out.println("\n===================================");
+            System.out.println("\n===> Library Management System <===");
+            System.out.println("\n===================================");
             System.out.println("1. Add Book");
             System.out.println("2. Register Member");
             System.out.println("3. Borrow Book");
@@ -24,7 +26,7 @@ public class Library {
             System.out.println("6. Exit");
             System.out.print("Choose an option: ");
             int choice = sc.nextInt();
-            sc.nextLine(); // consume newline
+            sc.nextLine();
 
             switch (choice) {
                 case 1:
